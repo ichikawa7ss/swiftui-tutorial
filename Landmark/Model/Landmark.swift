@@ -29,7 +29,7 @@ extension Landmark {
 
     var locationCoordinate: CLLocationCoordinate2D {
         CLLocationCoordinate2D(
-            latitude: coordinates.latifude,
+            latitude: coordinates.latitude,
             longitude: coordinates.longitude
         )
     }
@@ -37,7 +37,7 @@ extension Landmark {
 
 extension Landmark {
     struct Coordinates: Hashable, Codable {
-        var latifude: Double
+        var latitude: Double
         var longitude: Double
     }
 }
